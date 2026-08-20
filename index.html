@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informatics | inf.silatanui.dev</title>
+    
+    <!-- Importing the Outfit font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --bg-light: #f4f4f5;
+            --text-dark: #09090b;
+            --accent-color: #2563eb;
+            --white: #ffffff;
+        }
+
+        body {
+            font-family: 'Outfit', sans-serif;
+            background-color: var(--bg-light);
+            color: var(--text-dark);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        /* Strict flat colors and sharp edges */
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background-color: var(--text-dark);
+            color: var(--white);
+            padding: 60px 20px;
+            border-bottom: 5px solid var(--accent-color);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3rem;
+            font-weight: 700;
+            letter-spacing: -1px;
+        }
+
+        header p {
+            margin: 10px 0 0 0;
+            font-size: 1.2rem;
+            font-weight: 300;
+        }
+
+        main {
+            padding: 60px 0;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            border-bottom: 2px solid var(--text-dark);
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background-color: var(--white);
+            padding: 25px;
+            border: 2px solid var(--text-dark);
+            /* Guaranteeing no rounded corners */
+            border-radius: 0; 
+            transition: transform 0.2s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 8px 8px 0px var(--text-dark);
+        }
+
+        .card h3 {
+            margin-top: 0;
+            font-size: 1.4rem;
+        }
+
+        .card p {
+            font-size: 0.95rem;
+            color: #3f3f46;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background-color: var(--text-dark);
+            color: var(--white);
+            text-decoration: none;
+            font-weight: 700;
+            border: 2px solid var(--text-dark);
+        }
+
+        .btn:hover {
+            background-color: var(--white);
+            color: var(--text-dark);
+        }
+
+        footer {
+            background-color: var(--text-dark);
+            color: var(--white);
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>inf.silatanui.dev</h1>
+            <p>Informatics, Architecture, and Code.</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <h2 class="section-title">Latest Notes & Projects</h2>
+        
+        <div class="grid">
+            <!-- Article Card 1 -->
+            <article class="card">
+                <h3>Building RAG Pipelines</h3>
+                <p>Notes on deploying vector databases and managing text embeddings for smarter search functions.</p>
+                <a href="#" class="btn">Read More</a>
+            </article>
+
+            <!-- Article Card 2 -->
+            <article class="card">
+                <h3>Blazor WebAssembly</h3>
+                <p>Thoughts on enterprise full-stack development, C#, and managing state on the client side.</p>
+                <a href="#" class="btn">Read More</a>
+            </article>
+
+            <!-- Article Card 3 -->
+            <article class="card">
+                <h3>OCaml & Complexity</h3>
+                <p>Diving into functional programming paradigms and algorithm optimization strategies.</p>
+                <a href="#" class="btn">Read More</a>
+            </article>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Tanui Kipngetich Sila. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
